@@ -1,12 +1,26 @@
 <html>
     <head>
         <script src="https://ban.su/service/vkc.js"></script>
+        
+        <style>
+	button.knopka {
+	color: #fff; 
+	background: #FFA500; 
+	padding: 5px; 
+	border-radius: 5px;
+	border: 2px solid #FF8247;
+	} 
+	button.knopka:hover { 
+	background: #FF6347; 
+	}
+</style>
     </head>
     
     <body>
         <h1>Оно роботает </h1>
         <input type="radio" name="browser" value="a">Ура<Br>
-        <button>Круто (Прример кнопки)</button>
+        <button class="knopka">Круто (Прример кнопки)</button>
+        
         <script>vkc.send("VKWebAppInit", {});</script>
 
 
