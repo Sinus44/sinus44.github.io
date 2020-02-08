@@ -4,10 +4,13 @@
         
         <style>
 	button.knopka {
+	style="cursor: pointer;
 	color: #fff; 
+	font-size:24px;
 	background: #3caa3c; 
-	padding: 5px; 
-	border-radius: 5px;
+	text-decoration: none;
+	padding: 6px 5px; 
+	border-radius: 10px;
 	border: 2px solid #FF8247;
 	} 
 	button.knopka:active { 
@@ -18,9 +21,7 @@
     
     <body>
         <h1>Оно работает </h1>
-        <button class="knopka" href="#" onclick="alert('Пример 1 сработал'); return false;">Круто (Пример кнопки)</button>
-        <p class="buttond"  style="text-align:center;">
-		<a href="" target="_self" style="cursor: pointer; font-size:24px;  text-decoration: none; padding:6px 5px; color:#00f2ff; background-color:#e62929; border-radius:10px; border: 3px solid #5bd99a;">Случайный цвет</a></p>
+        <button class="knopka" style="text-align:center;" href="#" onclick="alert('Пример 1 сработал'); return false;">Круто (Пример кнопки)</button>
         <script>vkc.send("VKWebAppInit", {});</script>
 
 
