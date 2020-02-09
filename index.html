@@ -44,27 +44,6 @@
      context.closePath();
      context.stroke();
      context.fill();
-     // Рисуем левый глаз 
-     context.fillStyle = "#fff";
-     context.beginPath();
-     context.arc(84,90,8,0,Math.PI*2,true);
-     context.closePath();
-     context.stroke();
-     context.fill();
-     // Рисуем правый глаз 
-     context.beginPath();
-     context.arc(116,90,8,0,Math.PI*2,true);
-     context.closePath();
-     context.stroke();
-     context.fill();
-     // Рисуем рот
-     context.beginPath();
-     context.moveTo(70,115);
-     context.quadraticCurveTo(100,130,130,115);
-     context.quadraticCurveTo(100,150,70,115); 
-     context.closePath();
-     context.stroke();
-     context.fill();
     }
    }
   </script>
@@ -73,7 +52,7 @@
     
     <body>
       <center>
-      <Canvas></canvas>
+      <canvas></canvas>
       </center>
         <p align="center">
         <Button class="b1" href="#" onclick="return driw();" align="center" >отрисовать</button>
