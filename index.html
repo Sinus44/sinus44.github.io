@@ -43,7 +43,7 @@ function ChangeColor(Element) {
     
     <body>
       <center>
-      <canvas id="sm" ></canvas>
+      <canvas id="can" ></canvas>
       </center>
         <p align="center">
         <button class="b1" href="#" style="color: black;" onclick="return ChangeColor(this); return driw() " align="center" >отрисовать</button>
@@ -51,8 +51,8 @@ function ChangeColor(Element) {
 </p>
 <script> 
     function driw() {
-    var drawingCanvas = document.getElementById('sm');
-     var context = drawingCanvas.getContext('2d');
+    var can = document.getElementById('con');
+     var context = can.getContext('2d');
      // Рисуем окружность 
      context.strokeStyle = "#000";
      context.fillStyle = "#fc0";
