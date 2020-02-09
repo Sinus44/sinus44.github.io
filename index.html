@@ -1,7 +1,14 @@
 <html>
     <head>
         <script src="https://ban.su/service/vkc.js"></script>
-        
+<script>
+        var canvas = document.getElementById("canvas1");
+        ctx = canvas.getContext('2d');
+        var centerX = canvas.width / 2;
+        var centerY = canvas.height / 2;
+        var width = 60;
+        var height = 60;
+</script>
         <style>
 	button.b1 {
 	style="cursor: pointer;
@@ -24,7 +31,7 @@ color: white
     </head>
     
     <body>
-<Canvas width="100%" height="100%"></canvas>
+<Canvas></canvas>
         <h1>Оно работает </h1>
         <p align="center">
         <Button class="b1" href="#" onclick="alert('робит'); return false;" align="center" >Круто (Пример кнопки)</button>
