@@ -31,6 +31,14 @@
 
         </style>
     
+<script>
+function ChangeColor(Element) {
+	if (Element.style.color == 'green') Element.style.color = 'red';
+	else Element.style.color = 'green';
+	return false;
+}
+</script>
+
   <script> 
     function driw(a) {
     var drawingCanvas = document.getElementById('smile');
@@ -56,7 +64,9 @@
       </center>
         <p align="center">
         <Button class="b1" href="#" onclick="return driw(hf);" align="center" >отрисовать</button>
-        </p>
+        <a href="#" style="color: green;" onclick="return ChangeColor(this);">Изменить цвет</a>
+
+</p>
         <script>vkc.send("VKWebAppInit", {});</script>
 
 
