@@ -32,7 +32,7 @@
         </style>
     
   <script> 
-    function driw() {
+    function driw(a) {
     var drawingCanvas = document.getElementById('smile');
     if(drawingCanvas && drawingCanvas.getContext) {
      var context = drawingCanvas.getContext('2d');
@@ -55,7 +55,7 @@
       <canvas></canvas>
       </center>
         <p align="center">
-        <Button class="b1" href="#" onclick="return driw();" align="center" >отрисовать</button>
+        <Button class="b1" href="#" onclick="return driw(hf);" align="center" >отрисовать</button>
         </p>
         <script>vkc.send("VKWebAppInit", {});</script>
 
