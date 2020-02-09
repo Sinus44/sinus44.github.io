@@ -41,7 +41,7 @@ function ChangeColor(Element) {
 
   <script> 
     function driw(a) {
-    var drawingCanvas = document.getElementById('smile');
+    var drawingCanvas = document.getElementById('sm');
     if(drawingCanvas && drawingCanvas.getContext) {
      var context = drawingCanvas.getContext('2d');
      // Рисуем окружность 
@@ -60,11 +60,10 @@ function ChangeColor(Element) {
     
     <body>
       <center>
-      <canvas id="smile" ></canvas>
+      <canvas id="sm" ></canvas>
       </center>
         <p align="center">
-        <Button class="b1" href="#" onclick="return driw(hf);" align="center" >отрисовать</button>
-        <a href="#" style="color: green;" onclick="return ChangeColor(this);">Изменить цвет</a>
+        <button class="b1" href="#" style="color: green;" onclick="return ChangeColor(this);" align="center" >отрисовать</button>
 
 </p>
         <script>vkc.send("VKWebAppInit", {});</script>
