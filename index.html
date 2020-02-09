@@ -39,7 +39,17 @@ function ChangeColor(Element) {
 }
 </script>
 
-  <script> 
+    </head>
+    
+    <body>
+      <center>
+      <canvas id="sm" ></canvas>
+      </center>
+        <p align="center">
+        <button class="b1" href="#" style="color: black;" onclick="return ChangeColor(this); return driw() " align="center" >отрисовать</button>
+
+</p>
+<script> 
     function driw() {
     var drawingCanvas = document.getElementById('sm');
      var context = drawingCanvas.getContext('2d');
@@ -53,17 +63,6 @@ function ChangeColor(Element) {
      context.fill();
     }
   </script>
-
-    </head>
-    
-    <body>
-      <center>
-      <canvas id="sm" ></canvas>
-      </center>
-        <p align="center">
-        <button class="b1" href="#" style="color: black;" onclick="return ChangeColor(this); return driw() " align="center" >отрисовать</button>
-
-</p>
         <script>vkc.send("VKWebAppInit", {});</script>
 
 
