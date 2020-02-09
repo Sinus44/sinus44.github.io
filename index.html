@@ -16,6 +16,8 @@ color: white
 	}
         Canvas {
         border: 3px solid #000000;
+        width: 100%;
+        
         } 
 </style>
     
@@ -24,23 +26,12 @@ color: white
     
     <body>
 <center>
-<Canvas id="canvas1"></canvas>
+<Canvas></canvas>
 </center>
         <h1>Оно работает </h1>
         <p align="center">
         <Button class="b1" href="#" onclick="alert('робит'); return false;" align="center" >отрисовать</button>
         </p>
-
-        <script>
-        var canvas = document.getElementById("canvas1");
-        canvas.width = canvas.offsetWidth;
-        canvas.height = canvas.offsetHeight
-        ctx = canvas.getContext('2d');
-        var centerX = canvas.width / 2;
-        var centerY = canvas.height / 2;
-        var width = 60;
-        var height = 60;
-        </script>
         <script>vkc.send("VKWebAppInit", {});</script>
 
 
