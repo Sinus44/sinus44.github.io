@@ -1,6 +1,6 @@
 <html>
-    <head>
-        <script src="https://ban.su/service/vkc.js"></script> <!--  -->
+   <head>
+       <script src="https://ban.su/service/vkc.js"></script> <!--  -->
 	 
         <style> 
 
@@ -36,16 +36,28 @@
       <center>
       	<canvas id="con" width="128" height="230" onclick="return drow(); "></canvas> 
       </center>
-      <p align="center"><button class="b1" href="#" onclick="return drow(); " align="center" >отрисовать</button></p> 
+      <p align="center"><button class="b1" href="#" onclick="return drow(); " align="center" >Start</button></p> 
 	        
       <script>   
      	 function drow() { 
+			  
+	 var squarePosition_x = 10;
+	 var squarePosition_y = 0;
          var can = document.getElementById('con');
          var context = can.getContext('2d');
-         context.fillRect(30,30,10,10); 
-         }   
-      </script>  
+
+  	 context.clearRect(0, 0, can.width, can.height);
+         context.rect(squarePosition_x,squarePosition_y,10,10); 
+	 context.beginPath();
+	 context.lineStyle = "#109bfc";
+	 context.lineWidth = 1;
+	 context.stroke();
+		 
+	 squarePosition_y += 1;
+ 	 setTimeout("drow()", 20);
+	 }   
+     </script>  
 	    
-        <script>vkc.send("VKWebAppInit", {});</script> 
+       <script>vkc.send("VKWebAppInit", {});</script> 
     </body>
 </html>
