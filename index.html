@@ -1,8 +1,8 @@
 <html>
     <head>
-        <script src="https://ban.su/service/vkc.js"></script>
-
-        <style>
+        <script src="https://ban.su/service/vkc.js"></script> <!--  -->
+	 
+        <style> 
 
 	button.b1 {
 	style="cursor: pointer;
@@ -11,7 +11,7 @@
 	padding: 6px 5px; 
 	border-radius: 10px;
 	border: 2px solid #FF8247;
-        color: White ;
+        color: White;
 	} 
 
 	button.b1:active { 
@@ -30,26 +30,26 @@
         } 
 
         </style>
-   
-
     </head>
     
     <body>
       <center>
-      <canvas id="con" width="300" height="500" onclick="return drow(); "></canvas>
+      	<canvas id="con" width="1000" height="3000" onclick="return drow(); "></canvas> <!-- Канвас -->
       </center>
-        <p align="center">
-        <button class="b1" href="#" onclick="return drow(); " align="center" >отрисовать</button>
-
-</p>
-<script> 
-    function drow() {
-    var can = document.getElementById('con');
-    var context = can.getContext('2d');
-    context.fillRect(30,30,10,10);
-    }
-  </script>
-        <script>vkc.send("VKWebAppInit", {});</script>
-
+      <p align="center"><button class="b1" href="#" onclick="return drow(); " align="center" >отрисовать</button></p> <!-- Кнопка -->
+	    
+	    <!-- Отрисовка черного квадрата -->
+	    
+      <script>   
+     	 function drow() { 
+         var can = document.getElementById('con');
+         var context = can.getContext('2d');
+         context.fillRect(30,30,10,10); 
+         }   
+      </script>  
+	    
+	    
+	    
+        <script>vkc.send("VKWebAppInit", {});</script> <!-- Подключение к вк -->
     </body>
 </html>
