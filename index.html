@@ -46,14 +46,8 @@
 <script> 
     function drow() {
     var can = document.getElementById('con');
-     var context = can.getContext('2d');
-     context.strokeStyle = "#000";
-     context.fillStyle = "#fc0";
-     context.beginPath();
-     context.arc(100,75,50,0,2*Math.PI);
-     context.closePath();
-     context.stroke();
-     context.fillRect(30,30,10,10);
+    var context = can.getContext('2d');
+    context.fillRect(30,30,10,10);
     }
   </script>
         <script>vkc.send("VKWebAppInit", {});</script>
