@@ -45,16 +45,12 @@
          var can = document.getElementById('con');
          var context = can.getContext('2d');
 
-  	 context.clearRect(0, 0, can.width, can.height);
+  	 <!--context.clearRect(0, 0, can.width, can.height);-->
          context.rect(squarePosition_x,squarePosition_y,10,10); 
 	 context.beginPath();
 	 context.lineStyle = black;
 	 context.lineWidth = 1;
 	 context.stroke();
-		 
-	 squarePosition_y += 0.04;
- 	 setTimeout("return drow()", 500);
-	 }
      </script>  
 	    
        <script>vkc.send("VKWebAppInit", {});</script> 
