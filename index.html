@@ -38,16 +38,17 @@
       <p align="center"><button class="b1" href="#" onclick="return draw();" align="center" >Start</button></p> 
 	        
       <script>   
-     	 function draw() { 
-			  
-	 var squarePosition_x = 30;
-	 var squarePosition_y = 10;
-         var canv = document.getElementById('canva');
-         var context = canv.getContext('2d');
+     	 function draw() {
+ 	 	 var canvas = document.getElementById('canvas');
+  		 if (canvas.getContext){
+   		 var ctx = canvas.getContext('2d');
 
-  	 <!--context.clearRect(0, 0, canv.width, canv.height);-->
-         context.rect(30,30,10,10); 
-	 }
+  		 ctx.beginPath();
+  		 ctx.moveTo(75,50);
+  		 ctx.lineTo(100,75);
+  		 ctx.lineTo(100,25);
+  		 ctx.fill();
+	}
      </script>  
 	    
        <script>vkc.send("VKWebAppInit", {});</script> 
