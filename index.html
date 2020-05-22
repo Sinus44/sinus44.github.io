@@ -1,8 +1,7 @@
 <html>
    <head>
-       <script src="https://ban.su/service/vkc.js"></script> <!--  -->
-	 
-        <style> 
+        <script src="https://ban.su/service/vkc.js"></script>
+	<style> 
 
 	button.b1 {
 	style="cursor: pointer;
@@ -36,10 +35,10 @@
       <center>
       	<canvas id="con" width="128" height="230" onclick="return drow(); "></canvas> 
       </center>
-      <p align="center"><button class="b1" href="#" onclick="return drow();" align="center" >Start</button></p> 
+      <p align="center"><button class="b1" href="#" onclick="return draw();" align="center" >Start</button></p> 
 	        
       <script>   
-     	 function drow() { 
+     	 function draw() { 
 			  
 	 var squarePosition_x = 30;
 	 var squarePosition_y = 10;
@@ -54,8 +53,8 @@
 	 context.stroke();
 		 
 	 squarePosition_y += 0.04;
- 	 setTimeout("return drow()", 33);
-	 }   
+ 	 setTimeout("return drow()", 500);
+	 }
      </script>  
 	    
        <script>vkc.send("VKWebAppInit", {});</script> 
